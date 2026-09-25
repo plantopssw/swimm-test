@@ -33,6 +33,11 @@ export default function OrganizationPage() {
               <td>Pending</td>
             </tr>
           )}
+          <tr>
+            <td>Riyanudeen</td>
+            <td>Solutions Architect</td>
+            <td>Active</td>
+          </tr>
         </tbody>
       </table>
     </div>
