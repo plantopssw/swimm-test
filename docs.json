@@ -1,7 +1,8 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "name": "PlantOPS",
   "theme": "mint",
+  "name": "PlantOPS Documentation",
+  "description": "PlantOPS Manufacturing Execution Platform documentation.",
   "settings": {
     "modeToggle": {
       "default": "light",
@@ -9,25 +10,43 @@
     }
   },
   "colors": {
-    "primary": "#00205b",
-    "light": "#003399",
-    "dark": "#001a4d"
+    "primary": "#0E3A5F",
+    "light": "#1565B0",
+    "dark": "#0E3A5F"
   },
   "logo": {
-    "dark": "/logo/dark-logo.png",
-    "light": "/logo/dark-logo.png"
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png",
+    "href": "/"
+  },
+  "favicon": "/favicon.png",
+  "fonts": {
+    "family": "Inter"
   },
   "navigation": {
     "tabs": [
       {
-        "tab": "Admin App",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Overview",
-            "pages": ["index", "employees", "employee-tasks"]
+            "group": "Getting started",
+            "pages": ["index"]
+          },
+          {
+            "group": "Admin App",
+            "pages": ["employees", "employee-tasks"]
+          },
+          {
+            "group": "Documents",
+            "pages": ["templates/document-template"]
           }
         ]
       }
     ]
+  },
+  "footer": {
+    "socials": {
+      "website": "https://plantops.io"
+    }
   }
 }

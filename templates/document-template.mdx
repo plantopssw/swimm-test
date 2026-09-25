@@ -1,0 +1,113 @@
+---
+title: "[ Document Title ]"
+sidebarTitle: "[ Short Title ]"
+description: "[ Document Subtitle ]"
+icon: "file-lines"
+tag: "DRAFT"
+keywords: ["plantops", "[ keyword ]"]
+# lastUpdatedDate: "2026-01-31"   # optional: overrides the Git-based "last updated" date
+# ---- PlantOPS document control (custom metadata) ----
+documentName: "[ Document name ]"
+documentType: "[ Design Specification / SOP / Guide ]"
+audience: "[ Intended readers ]"
+version: "1.0"
+status: "Draft"
+gampCategory: "[ Category 4 ]"
+regulatoryBasis: "[ 21 CFR Part 11; EU Annex 11 ]"
+author: "[ Author / Owner ]"
+revisionDate: "[ DD-MMM-YYYY ]"
+classification: "[ Confidential / Internal ]"
+---
+
+{/*
+  PlantOPS standard document template (Mintlify).
+  1. Copy this file to the right folder and rename it (kebab-case, e.g. batch-release-sop.mdx).
+  2. Replace every "[ ... ]" placeholder in the frontmatter and the Document control table.
+  3. Add the page path (without .mdx) to "navigation" in docs.json.
+  4. Remove the "tag: DRAFT" line once the document is Approved.
+  This comment is not rendered.
+*/}
+
+<Frame>
+  <img src="/images/plantops-logo.png" alt="PlantOPS" style={{ maxHeight: "140px", margin: "0 auto" }} />
+</Frame>
+
+**PLANTOPS** • MANUFACTURING EXECUTION PLATFORM
+
+<Columns cols={2}>
+  <Card title="Version" icon="code-branch">
+    [ 1.0 ]
+  </Card>
+  <Card title="Revision date" icon="calendar">
+    [ DD-MMM-YYYY ]
+  </Card>
+</Columns>
+
+## Document control
+
+| Field | Value |
+| :--- | :--- |
+| **Document Name** | [ Document name ] |
+| **Document Type** | [ e.g. Design Specification / SOP / Guide ] |
+| **Audience** | [ Intended readers ] |
+| **Version** | [ 1.0 ] |
+| **Status** | [ Draft / Approved ] |
+| **GAMP Category** | [ e.g. Category 4 ] |
+| **Regulatory Basis** | [ e.g. 21 CFR Part 11; EU Annex 11 ] |
+| **Author** | [ Author / Owner ] |
+| **Revision Date** | [ DD-MMM-YYYY ] |
+| **Classification** | [ Confidential / Internal ] |
+
+<Note>
+  The table of contents is generated automatically from the `##` and `###` headings and appears in the right-hand sidebar.
+</Note>
+
+## 1. Introduction
+
+[ State the purpose of this document and the problem it addresses. ]
+
+### 1.1 Purpose
+
+[ Why this document exists. ]
+
+### 1.2 Scope
+
+[ What is in scope and out of scope. ]
+
+### 1.3 Definitions and abbreviations
+
+| Term | Definition |
+| :--- | :--- |
+| [ Term ] | [ Definition ] |
+
+## 2. [ Section title ]
+
+[ Body text. Keep paragraphs in plain prose. Mark identifiers with inline code, like `context.IsCompleteAsync()`. ]
+
+### 2.1 [ Sub-section title ]
+
+[ Content. ]
+
+#### 2.1.1 [ Sub-sub-section title ]
+
+[ Content. ]
+
+## 3. [ Section title ]
+
+[ Content. ]
+
+## 4. References
+
+| Ref | Document | Version |
+| :--- | :--- | :--- |
+| [ 1 ] | [ Referenced document ] | [ 1.0 ] |
+
+## 5. Revision history
+
+| Version | Date | Author | Description of change |
+| :--- | :--- | :--- | :--- |
+| 1.0 | [ DD-MMM-YYYY ] | [ Author ] | Initial release |
+
+---
+
+<sub>© PlantOPS Software LLC • [ Classification ]</sub>
