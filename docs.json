@@ -9,7 +9,7 @@
     "groups": [
       {
         "group": "Home",
-        "pages": ["index", "employees"]
+        "pages": ["index", "employees", "employee-tasks"]
       }
     ]
   },
