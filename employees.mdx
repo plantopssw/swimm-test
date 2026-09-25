@@ -1,0 +1,43 @@
+---
+title: "Employees: view team members, roles, and status"
+description: "Use the Employees page in the PlantOPS admin app to see team members, their roles, teams, and account status, and to search or filter by status."
+---
+
+The **Employees** page shows the people in your organization and the state of their accounts. Use it when you need to confirm who has access to the admin app, what role and team each person has, or whether an account is active.
+
+## Where to find it
+
+In the admin app sidebar, select **Employees**. The page opens at `/employees`.
+
+## Summary cards
+
+The top of the page shows three counts for your organization:
+
+| Card | Description |
+| --- | --- |
+| **Total employees** | The number of people in your organization. |
+| **Active members** | The number of people with an `Active` status. |
+| **Pending invites** | The number of people with a `Pending` status. |
+
+## Employee table
+
+The page lists each employee in a table with the following columns:
+
+| Column | Description |
+| --- | --- |
+| **Employee** | The employee's initials and full name. |
+| **Role** | The employee's role, such as `Solutions Architect` or `Read-Only`. |
+| **Team** | The team the employee belongs to, such as `Engineering` or `Operations`. |
+| **Status** | The employee's account status: `Active`, `Pending`, or `Inactive`. |
+
+## Search and filter employees
+
+To find specific employees, type in the **Search employees** field above the table. The search matches text in the employee's name, role, or team, and ignores case. For example, typing `engineering` shows everyone on the Engineering team.
+
+To show only employees with one status, open the status menu next to the search field and select **Active**, **Pending**, or **Inactive**. Select **All statuses** to show everyone again.
+
+You can use search and the status filter together. If no employees match, the table shows **No employees match your search.**
+
+<Note>
+  The Employees page is read-only. You can't add, remove, or edit employees from this page.
+</Note>
