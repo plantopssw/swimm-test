@@ -14,7 +14,7 @@
         "groups": [
           {
             "group": "Overview",
-            "pages": ["index"]
+            "pages": ["index", "employees", "employee-tasks"]
           }
         ]
       }

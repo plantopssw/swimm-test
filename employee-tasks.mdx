@@ -1,0 +1,55 @@
+---
+title: "Employee tasks: assign and track work for each employee"
+description: "Use the Employee tasks page in the PlantOPS admin app to assign tasks to an employee, mark them complete, and track progress toward finishing their work."
+---
+
+The **Employee tasks** page shows the tasks assigned to one employee at a time. Use it when you need to see what an employee is working on, add a new task for them, or check how much of their work is complete.
+
+## Where to find it
+
+On the [Employees](/employees) page, find the employee in the table and select **View tasks** in the **Tasks** column. The page opens at `/employees/tasks` with that employee already selected.
+
+You can also link directly to an employee's tasks with the `employee` query parameter. The value is the employee's name in lowercase, with spaces replaced by hyphens:
+
+```text
+/employees/tasks?employee=aisha-rahman
+```
+
+If you open `/employees/tasks` without the `employee` parameter, the page shows the first employee in the list.
+
+## Switch employees
+
+To view another employee's tasks, open the **Employee** menu at the top of the page and select a name. The page shows the selected employee's name and role next to the menu.
+
+## Track progress
+
+A progress bar next to the **Employee** menu shows how many of the employee's tasks are complete, such as `1/2 complete`. The bar fills as you mark tasks complete.
+
+## Task list
+
+Each task in the list shows:
+
+| Field | Description |
+| --- | --- |
+| **Checkbox** | Marks the task complete or incomplete. Completed tasks appear crossed out. |
+| **Title** | A short description of the work. |
+| **Due** | When the task is due, such as `Today`, `Tomorrow`, or a date. |
+| **Priority** | The task's priority: `High`, `Medium`, or `Low`. |
+
+If the employee has no tasks, the list shows **No tasks assigned yet. Add the first task above.**
+
+## Add a task
+
+1. Select the employee in the **Employee** menu.
+2. Type the task title in the **Add a task for** field.
+3. Select **Add task** or press <kbd>Enter</kbd>.
+
+New tasks get `Medium` priority and `No due date`. You can't edit a task's priority or due date after you add it.
+
+## Complete a task
+
+Select the checkbox next to a task to mark it complete. Select it again to mark the task incomplete.
+
+<Note>
+  Tasks you add and completion changes you make aren't saved. They reset when you reload the page or leave the admin app.
+</Note>
