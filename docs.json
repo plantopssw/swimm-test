@@ -14,8 +14,8 @@
     "dark": "#001a4d"
   },
   "logo": {
-    "dark": "/logo/ForDarkBackground.png",
-    "light": "/logo/ForLightBackground.png"
+    "dark": "/logo/dark-logo.png",
+    "light": "/logo/light-logo.png"
   },
   "navigation": {
     "tabs": [
