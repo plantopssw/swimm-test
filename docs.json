@@ -2,9 +2,11 @@
   "$schema": "https://mintlify.com/docs.json",
   "name": "PlantOPS",
   "theme": "mint",
-  "modeToggle": {
-    "default": "light",
-    "isHidden": true
+  "settings": {
+    "modeToggle": {
+      "default": "light",
+      "isHidden": true
+    }
   },
   "colors": {
     "primary": "#00205b",
