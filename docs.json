@@ -3,9 +3,13 @@
   "name": "PlantOPS",
   "theme": "luma",
   "colors": {
-    "primary": "#1a73e8",
-    "light": "#4285f4",
-    "dark": "#0d47a1"
+    "primary": "#00205b",
+    "light": "#003399",
+    "dark": "#001a4d"
+  },
+  "logo": {
+    "dark": "/logo/ForDarkBackground.png",
+    "light": "/logo/ForLightBackground.png"
   },
   "navigation": {
     "tabs": [
@@ -14,7 +18,7 @@
         "groups": [
           {
             "group": "Overview",
-            "pages": ["index"]
+            "pages": ["index", "employees", "employee-tasks"]
           }
         ]
       }
