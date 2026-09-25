@@ -1,14 +1,16 @@
 {
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
   "name": "PlantOPS Docs",
   "colors": {
     "primary": "#1a73e8"
   },
-  "navigation": [
-    {
-      "group": "Home",
-      "pages": [
-        "index"
-      ]
-    }
-  ]
+  "navigation": {
+    "groups": [
+      {
+        "group": "Home",
+        "pages": ["index"]
+      }
+    ]
+  }
 }
