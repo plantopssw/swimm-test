@@ -1,14 +1,13 @@
 import 'src/global.css';
 
 import { useEffect } from 'react';
-
 import Fab from '@mui/material/Fab';
-
 import { usePathname } from 'src/routes/hooks';
-
 import { ThemeProvider } from 'src/theme/theme-provider';
-
 import { Iconify } from 'src/components/iconify';
+
+// Import our new page so the AI sees it connected to the main app
+import OrganizationPage from './OrganizationPage';
 
 // ----------------------------------------------------------------------
 
@@ -40,6 +39,8 @@ export default function App({ children }: AppProps) {
 
   return (
     <ThemeProvider>
+      {/* We drop the new page here so it is officially rendered */}
+      <OrganizationPage />
       {children}
       {githubButton()}
     </ThemeProvider>
