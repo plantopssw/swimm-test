@@ -1,6 +1,6 @@
 ---
 title: "Employees: view team members, roles, and status"
-description: "Use the Employees page in the PlantOPS admin app to see team members, their roles, teams, and account status, and to search or filter by status."
+description: "Use the Employees page in the PlantOPS admin app to see team members, roles, teams, and account status, search or filter by status, and open profiles."
 ---
 
 The **Employees** page shows the people in your organization and the state of their accounts. Use it when you need to confirm who has access to the admin app, what role and team each person has, or whether an account is active.
@@ -25,7 +25,7 @@ The page lists each employee in a table with the following columns:
 
 | Column | Description |
 | --- | --- |
-| **Employee** | The employee's initials and full name. |
+| **Employee** | The employee's initials and full name. Select the name to open the employee's profile. See [View an employee's profile](#view-an-employees-profile). |
 | **Role** | The employee's role, such as `Solutions Architect` or `Read-Only`. |
 | **Team** | The team the employee belongs to, such as `Engineering` or `Operations`. |
 | **Status** | The employee's account status: `Active`, `Pending`, or `Inactive`. |
@@ -38,6 +38,24 @@ To find specific employees, type in the **Search employees** field above the tab
 To show only employees with one status, open the status menu next to the search field and select **Active**, **Pending**, or **Inactive**. Select **All statuses** to show everyone again.
 
 You can use search and the status filter together. If no employees match, the table shows **No employees match your search.**
+
+## View an employee's profile
+
+To see more detail about one employee, select their name in the **Employee** column. The profile opens at `/employees/<employee-id>`. The ID is the employee's name in lowercase, with spaces replaced by hyphens:
+
+```text
+/employees/aisha-rahman
+```
+
+The profile shows:
+
+| Section | Description |
+| --- | --- |
+| **Header** | The employee's initials, name, status, role, and team. |
+| **Task overview** | Counts of the employee's **Assigned tasks**, **Open tasks**, and **Completed** tasks. |
+| **Employee details** | The employee's **Email**, **Team**, and **Joined** date. Employees with a `Pending` status show `Invite pending` instead of a join date. |
+
+To open the employee's task list, select **View tasks** in the header. See [Employee tasks](/employee-tasks). To return to the table, select **Back to employees**.
 
 <Note>
   The Employees page is read-only. You can't add, remove, or edit employees from this page.
