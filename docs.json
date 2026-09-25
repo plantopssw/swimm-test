@@ -15,7 +15,7 @@
   },
   "logo": {
     "dark": "/logo/dark-logo.png",
-    "light": "/logo/light-logo.png"
+    "light": "/logo/dark-logo.png"
   },
   "navigation": {
     "tabs": [
