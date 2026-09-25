@@ -1,22 +1,23 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "PlantOPS Docs",
+  "name": "PlantOPS",
+  "theme": "luma",
   "colors": {
-    "primary": "#1a73e8"
+    "primary": "#1a73e8",
+    "light": "#4285f4",
+    "dark": "#0d47a1"
   },
   "navigation": {
-    "groups": [
+    "tabs": [
       {
-        "group": "Home",
-        "pages": ["index", "employees"]
+        "tab": "Admin App",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["index"]
+          }
+        ]
       }
     ]
-  },
-  "redirects": [
-    {
-      "source": "/organization-settings",
-      "destination": "/employees"
-    }
-  ]
+  }
 }
