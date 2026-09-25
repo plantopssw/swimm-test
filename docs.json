@@ -9,8 +9,14 @@
     "groups": [
       {
         "group": "Home",
-        "pages": ["index", "organization-settings"]
+        "pages": ["index", "employees"]
       }
     ]
-  }
+  },
+  "redirects": [
+    {
+      "source": "/organization-settings",
+      "destination": "/employees"
+    }
+  ]
 }
