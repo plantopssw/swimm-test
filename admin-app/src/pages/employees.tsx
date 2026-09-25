@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -6,6 +7,7 @@ import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import Table from '@mui/material/Table';
 import Select from '@mui/material/Select';
+import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import TableRow from '@mui/material/TableRow';
 import TableBody from '@mui/material/TableBody';
@@ -114,6 +116,7 @@ export default function EmployeesPage() {
                   <TableCell>Role</TableCell>
                   <TableCell>Team</TableCell>
                   <TableCell>Status</TableCell>
+                  <TableCell align="right">Tasks</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -131,6 +134,16 @@ export default function EmployeesPage() {
                     <TableCell>{employee.team}</TableCell>
                     <TableCell>
                       <Chip label={employee.status} color={statusColors[employee.status as keyof typeof statusColors]} size="small" variant="outlined" />
+                    </TableCell>
+                    <TableCell align="right">
+                      <Button
+                        component={RouterLink}
+                        to={`/employees/tasks?employee=${employee.name.toLowerCase().replace(/\s+/g, '-')}`}
+                        size="small"
+                        startIcon={<Iconify icon="solar:check-circle-bold" width={16} />}
+                      >
+                        View tasks
+                      </Button>
                     </TableCell>
                   </TableRow>
                 ))}
