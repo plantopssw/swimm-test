@@ -16,6 +16,7 @@ export const DashboardPage = lazy(() => import('src/pages/dashboard'));
 export const BlogPage = lazy(() => import('src/pages/blog'));
 export const UserPage = lazy(() => import('src/pages/user'));
 export const EmployeesPage = lazy(() => import('src/pages/employees'));
+export const EmployeeDetailPage = lazy(() => import('src/pages/employee-detail'));
 export const EmployeeTasksPage = lazy(() => import('src/pages/employee-tasks'));
 export const EmployeeTaskReportPage = lazy(() => import('src/pages/employee-task-report'));
 export const SignInPage = lazy(() => import('src/pages/sign-in'));
@@ -57,6 +58,7 @@ export const routesSection: RouteObject[] = [
       { path: 'employees', element: <EmployeesPage /> },
       { path: 'employees/tasks', element: <EmployeeTasksPage /> },
       { path: 'employees/tasks/report', element: <EmployeeTaskReportPage /> },
+      { path: 'employees/:employeeId', element: <EmployeeDetailPage /> },
       { path: 'products', element: <ProductsPage /> },
       { path: 'blog', element: <BlogPage /> },
     ],

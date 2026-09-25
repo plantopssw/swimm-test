@@ -127,7 +127,14 @@ export default function EmployeesPage() {
                         <Box sx={{ display: 'grid', placeItems: 'center', width: 36, height: 36, borderRadius: '50%', bgcolor: 'grey.200', color: 'text.secondary', fontWeight: 700, fontSize: 13 }}>
                           {employee.initials}
                         </Box>
-                        <Typography variant="subtitle2">{employee.name}</Typography>
+                        <Typography
+                          component={RouterLink}
+                          to={`/employees/${employee.name.toLowerCase().replace(/\s+/g, '-')}`}
+                          variant="subtitle2"
+                          sx={{ color: 'text.primary', textDecoration: 'none', '&:hover': { color: 'primary.main' } }}
+                        >
+                          {employee.name}
+                        </Typography>
                       </Stack>
                     </TableCell>
                     <TableCell>{employee.role}</TableCell>
