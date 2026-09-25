@@ -1,6 +1,6 @@
 ---
 title: "Organization settings: view team members and roles"
-description: "Use the Organization settings panel in the PlantOPS admin app to see every team member in your organization with their role and account status."
+description: "Use the Organization settings panel in the PlantOPS admin app to see team members, their roles, and account status, including pending users."
 ---
 
 The **Organization settings** panel shows the people in your organization and the state of their accounts. Use it when you need to confirm who has access to the admin app, what role each person holds, or whether an account is active.
@@ -19,11 +19,24 @@ The panel lists each team member in a table with the following columns:
 | **Role** | The team member's role in the organization, such as `Admin`. |
 | **Status** | The team member's account status, such as `Active`. |
 
-For example, an organization with a single administrator shows one row:
+For example, an organization with one active team member shows one row:
 
 | Name | Role | Status |
 | --- | --- | --- |
-| Mohamed Riyanudeen | Admin | Active |
+| Mohamed Riyanudeen | AWS Solutions Architect | Active |
+
+## View pending users
+
+By default, the table shows only team members whose accounts are active. To also see accounts that are still awaiting activation, select **View Pending Users** above the table.
+
+Pending accounts appear in the table with a **Status** of `Pending`. For example:
+
+| Name | Role | Status |
+| --- | --- | --- |
+| Mohamed Riyanudeen | AWS Solutions Architect | Active |
+| System Account | Read-Only | Pending |
+
+To hide pending accounts again, select **Hide Pending Users**.
 
 <Note>
   The panel is read-only. You can't add, remove, or edit team members from this table.
