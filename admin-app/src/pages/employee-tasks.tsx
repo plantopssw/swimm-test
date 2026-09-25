@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams , Link as RouterLink } from 'react-router-dom';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -84,10 +84,17 @@ export default function EmployeeTasksPage() {
       <title>{`Employee tasks - ${CONFIG.appName}`}</title>
       <DashboardContent>
         <Stack spacing={1} sx={{ mb: 4 }}>
-          <Typography variant="h4">Employee tasks</Typography>
-          <Typography color="text.secondary">
-            Assign work, track progress, and keep each employee&apos;s next steps visible.
-          </Typography>
+          <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} justifyContent="space-between" alignItems={{ sm: 'center' }}>
+            <Box>
+              <Typography variant="h4">Employee tasks</Typography>
+              <Typography color="text.secondary" sx={{ mt: 1 }}>
+                Assign work, track progress, and keep each employee&apos;s next steps visible.
+              </Typography>
+            </Box>
+            <Button component={RouterLink} to="/employees/tasks/report" variant="outlined" startIcon={<Iconify icon="solar:settings-bold-duotone" />}>
+              View report
+            </Button>
+          </Stack>
         </Stack>
 
         <Card sx={{ mb: 3, p: 2.5 }}>
