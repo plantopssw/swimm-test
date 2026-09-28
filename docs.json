@@ -34,7 +34,7 @@
           },
           {
             "group": "Admin App",
-            "pages": ["employees", "employee-tasks", "employee-task-report"]
+            "pages": ["employees", "employee-tasks", "employee-task-report", "activity"]
           },
           {
             "group": "Documents",
