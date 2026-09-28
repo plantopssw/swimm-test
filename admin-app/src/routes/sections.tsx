@@ -14,6 +14,7 @@ import { DashboardLayout } from 'src/layouts/dashboard';
 
 export const DashboardPage = lazy(() => import('src/pages/dashboard'));
 export const BlogPage = lazy(() => import('src/pages/blog'));
+export const ActivityPage = lazy(() => import('src/pages/activity'));
 export const UserPage = lazy(() => import('src/pages/user'));
 export const EmployeesPage = lazy(() => import('src/pages/employees'));
 export const EmployeeDetailPage = lazy(() => import('src/pages/employee-detail'));
@@ -61,6 +62,7 @@ export const routesSection: RouteObject[] = [
       { path: 'employees/:employeeId', element: <EmployeeDetailPage /> },
       { path: 'products', element: <ProductsPage /> },
       { path: 'blog', element: <BlogPage /> },
+      { path: 'activity', element: <ActivityPage /> },
     ],
   },
   {
